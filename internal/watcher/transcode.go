@@ -5,7 +5,7 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/carolynvs/handbrk8s/internal/k8s/jobs"
+	"github.com/akolk/handbrk8s/internal/k8s/jobs"
 	"github.com/pkg/errors"
 )
 
