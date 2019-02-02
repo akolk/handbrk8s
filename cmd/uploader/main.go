@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/carolynvs/handbrk8s/cmd"
-	"github.com/carolynvs/handbrk8s/internal/fs"
-	"github.com/carolynvs/handbrk8s/internal/plex"
+	"github.com/akolk/handbrk8s/cmd"
+	"github.com/akolk/handbrk8s/internal/fs"
+	"github.com/akolk/handbrk8s/internal/plex"
 	"github.com/dustin/go-humanize"
 	"github.com/pkg/errors"
 )
