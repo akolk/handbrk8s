@@ -6,9 +6,9 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/carolynvs/handbrk8s/cmd"
-	"github.com/carolynvs/handbrk8s/internal/plex"
-	"github.com/carolynvs/handbrk8s/internal/watcher"
+	"github.com/akolk/handbrk8s/cmd"
+	"github.com/akolk/handbrk8s/internal/plex"
+	"github.com/akolk/handbrk8s/internal/watcher"
 )
 
 var configVolume = "/config"
