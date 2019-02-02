@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: dashboard
-        image: carolynvs/handbrk8s-dashboard:latest
+        image: akolk/handbrk8s-dashboard:latest
         imagePullPolicy: Always
 ---
 apiVersion: v1
