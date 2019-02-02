@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/carolynvs/handbrk8s/internal/k8s/api"
+	"github.com/akolk/handbrk8s/internal/k8s/api"
 	"github.com/pkg/errors"
 	batchv1 "k8s.io/api/batch/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
