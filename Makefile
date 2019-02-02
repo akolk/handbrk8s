@@ -11,19 +11,19 @@ $(DEP):
 
 watcher:
 	cd ./cmd/watcher; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
-	cd ./cmd/watcher; docker build -t carolynvs/handbrk8s-watcher .
+	cd ./cmd/watcher; docker build -t akolk/handbrk8s-watcher .
 
 dashboard:
 	cd ./cmd/dashboard; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
-	cd ./cmd/dashboard; docker build -t carolynvs/handbrk8s-dashboard .
+	cd ./cmd/dashboard; docker build -t akolk/handbrk8s-dashboard .
 
 jobchain:
 	cd ./cmd/jobchain; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
-	cd ./cmd/jobchain; docker build -t carolynvs/jobchain .
+	cd ./cmd/jobchain; docker build -t akolk/jobchain .
 
 uploader:
 	cd ./cmd/uploader; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
-	cd ./cmd/uploader; docker build -t carolynvs/handbrk8s-uploader .
+	cd ./cmd/uploader; docker build -t akolk/handbrk8s-uploader .
 
 test:
 	go test ./...
