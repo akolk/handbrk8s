@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/carolynvs/handbrk8s/internal/fs"
-	"github.com/carolynvs/handbrk8s/internal/k8s/jobs"
-	"github.com/carolynvs/handbrk8s/internal/plex"
+	"github.com/akolk/handbrk8s/internal/fs"
+	"github.com/akolk/handbrk8s/internal/k8s/jobs"
+	"github.com/akolk/handbrk8s/internal/plex"
 	"github.com/pkg/errors"
 )
 
