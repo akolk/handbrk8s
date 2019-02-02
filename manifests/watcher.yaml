@@ -18,11 +18,11 @@ spec:
         fsGroup: 998
       containers:
       - name: watcher
-        image: carolynvs/handbrk8s-watcher:latest
+        image: akolk/handbrk8s-watcher:latest
         imagePullPolicy: Always
         args:
         - "--plex-server"
-        - "http://deathstar:32400"
+        - "http://plex2.kolk.local:32400"
         env:
         - name: PLEX_TOKEN
           value: "Bpfj5wDaJGqcTBqDT8wJ"
