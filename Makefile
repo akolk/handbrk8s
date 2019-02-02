@@ -10,19 +10,19 @@ $(DEP):
 	go get -u github.com/golang/dep/cmd/dep
 
 watcher:
-	cd ./cmd/watcher; CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+	cd ./cmd/watcher; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
 	cd ./cmd/watcher; docker build -t carolynvs/handbrk8s-watcher .
 
 dashboard:
-	cd ./cmd/dashboard; CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+	cd ./cmd/dashboard; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
 	cd ./cmd/dashboard; docker build -t carolynvs/handbrk8s-dashboard .
 
 jobchain:
-	cd ./cmd/jobchain; CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+	cd ./cmd/jobchain; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
 	cd ./cmd/jobchain; docker build -t carolynvs/jobchain .
 
 uploader:
-	cd ./cmd/uploader; CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+	cd ./cmd/uploader; CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build
 	cd ./cmd/uploader; docker build -t carolynvs/handbrk8s-uploader .
 
 test:
@@ -34,10 +34,10 @@ validate: $(DEP)
 	dep status | grep -v "mismatch"
 
 publish:
-	docker push carolynvs/handbrk8s-watcher
-	docker push carolynvs/handbrk8s-dashboard
-	docker push carolynvs/jobchain
-	docker push carolynvs/handbrk8s-uploader
+	docker push akolk/handbrk8s-watcher
+	docker push akolk/handbrk8s-dashboard
+	docker push akolk/jobchain
+	docker push cakolkhandbrk8s-uploader
 
 init:
 	kubectl apply -f manifests/namespace.yaml
