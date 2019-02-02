@@ -3,7 +3,7 @@ package jobs
 import (
 	"log"
 
-	"github.com/carolynvs/handbrk8s/internal/k8s/api"
+	"github.com/akolk/handbrk8s/internal/k8s/api"
 	"github.com/pkg/errors"
 	batchv1 "k8s.io/api/batch/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
