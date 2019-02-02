@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/carolynvs/handbrk8s/internal/watcher"
+	"github.com/akolk/handbrk8s/internal/watcher"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
