@@ -11,7 +11,7 @@ spec:
     spec:
       initContainers:
       - name: jobchain
-        image: carolynvs/jobchain:latest
+        image: akolk/jobchain:latest
         imagePullPolicy: Always
         args:
         - "--namespace"
@@ -20,7 +20,7 @@ spec:
         - "{{.WaitForJob}}"
       containers:
       - name: uploader
-        image: carolynvs/handbrk8s-uploader:latest
+        image: akolk/handbrk8s-uploader:latest
         imagePullPolicy: Always
         args:
         - "-f"
