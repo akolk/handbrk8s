@@ -6,8 +6,8 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/carolynvs/handbrk8s/cmd"
-	"github.com/carolynvs/handbrk8s/internal/k8s/jobs"
+	"github.com/akolk/handbrk8s/cmd"
+	"github.com/akolk/handbrk8s/internal/k8s/jobs"
 )
 
 // jobchain -name JOBNAME [-namespace NAMESPACE]
