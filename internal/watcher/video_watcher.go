@@ -138,6 +138,9 @@ func (w *VideoWatcher) handleVideo(path string) {
 
 	transcodedPath := filepath.Join(w.TranscodedDir, pathSuffix)
 	transcodeJobName, err := w.createTranscodeJob(claimPath, transcodedPath)
+	if len(transcodeJobName) > 63 {
+		transcodeJobName := transcodeJobName[len(transcodeJobName) - 63:];	
+	}
 	if err != nil {
 		log.Println(err)
 		w.cleanupFailedClaim(claimPath)
